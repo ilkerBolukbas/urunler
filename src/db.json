@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "id": "988f",
+      "ad": "telefon",
+      "description": "Yeni model akıllı telefon, 128GB depolama. Yüksek çözünürlüklü kamera.     ",
+      "fiyat": "1235456",
+      "image": "https://images.pexels.com/photos/301718/pexels-photo-301718.jpeg"
+    },
+    {
+      "id": "f446",
+      "ad": "volkswagen golf",
+      "description": "2023 model, düşük yakıt tüketimi, konforlu iç mekan. ",
+      "fiyat": "123515",
+      "image": "https://images.pexels.com/photos/28447293/pexels-photo-28447293.jpeg"
+    },
+    {
+      "id": "e8b2",
+      "ad": "deneme",
+      "description": "denemeler",
+      "fiyat": "123123",
+      "image": "https://images.pexels.com/photos/17036389/pexels-photo-17036389.jpeg"
+    }
+  ]
+}
