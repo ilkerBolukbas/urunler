@@ -20,6 +20,13 @@
       "description": "denemeler",
       "fiyat": "123123",
       "image": "https://images.pexels.com/photos/17036389/pexels-photo-17036389.jpeg"
+    },
+    {
+      "id": "01b2",
+      "ad": "deneme",
+      "description": "deneme",
+      "fiyat": "1225",
+      "image": "https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg"
     }
   ]
 }
