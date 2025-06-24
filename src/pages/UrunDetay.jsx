@@ -6,7 +6,7 @@ const UrunDetay = () => {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:3001/products/${productId}`)
+    fetch(`http://localhost:3000/products/${productId}`)
       .then(res => res.json())
       .then(data => setProduct(data))
       .catch(err => console.error('Detay veri çekme hatası:', err));
