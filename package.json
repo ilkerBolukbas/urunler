@@ -8,8 +8,9 @@
   "build": "webpack --mode production",
   "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
   "preview": "vite preview",
-  "server": "node index.js"
+  "api": "json-server --watch db.json --port 3000"
 }
+
 ,
   "dependencies": {
     "react": "^19.0.0",

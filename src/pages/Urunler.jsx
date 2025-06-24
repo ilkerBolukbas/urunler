@@ -7,7 +7,7 @@ const Urunler = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:3001/products')
+    fetch('http://localhost:3000/products') // port 3000 olarak güncellendi
       .then((res) => {
         if (!res.ok) throw new Error('Sunucu hatası');
         return res.json();
@@ -33,9 +33,24 @@ const Urunler = () => {
       ) : (
         <div>
           {products.map((urun) => (
-            <div key={urun.id} style={{border: '1px solid #ccc', padding: '10px', marginBottom: '10px'}}>
+            <div
+              key={urun.id}
+              style={{
+                border: '1px solid #ccc',
+                padding: '10px',
+                marginBottom: '10px',
+                borderRadius: '8px',
+              }}
+            >
               <h4>{urun.name}</h4>
-              <img src={urun.image} alt={urun.name} width={150} style={{marginBottom: '10px'}} />
+              {urun.image && (
+                <img
+                  src={urun.image}
+                  alt={urun.name}
+                  width={150}
+                  style={{ marginBottom: '10px' }}
+                />
+              )}
               <p>{urun.description}</p>
               <p>Fiyat: {urun.fiyat}₺</p>
               <Link to={`/urunler/${urun.id}`}>Detay</Link>
